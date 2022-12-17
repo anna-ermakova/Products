@@ -14,5 +14,17 @@ public class Main {
         tomat.addProduct(product);
         egg.addProduct(product);
         product.remove(apple);
+
+        Set<Recipe> recipeBook = new HashSet<>();
+        Recipe eggInTomat = new Recipe("Яйцо в томате");
+        Recipe bananInEgg = new Recipe("Банан в яйце");
+
+        eggInTomat.addProductInRecipe(egg, tomat);
+        bananInEgg.addProductInRecipe(egg, banan);
+
+        eggInTomat.addRecipe(recipeBook);
+        bananInEgg.addRecipe(recipeBook);
+
+
     }
 }
